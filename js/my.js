@@ -72,7 +72,7 @@ $(document).ready(function () {
         '            ' + element.title +
         '            </div>' +
         '            <div' +
-        '            class="font_header font_size_16 w3-hide-medium"' +
+        '            class="font_header font_size_16 w3-hide-medium w3-hide-small"' +
         '            style="position: absolute; right: 0px;"' +
         '            >' +
         '            '+element.date+' | '+element.tag+'' +
