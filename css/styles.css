@@ -1,0 +1,261 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: SpaceMono;
+  src: url(../fonts/Space_Mono/SpaceMono-Regular.ttf);
+}
+@font-face {
+  font-family: SpaceMonoBold;
+  src: url(../fonts/Space_Mono/SpaceMono-Bold.ttf);
+}
+
+.font_header {
+  font-family: SpaceMono;
+}
+.font_header_bold {
+  font-family: SpaceMonoBold;
+}
+.font_content {
+  font-family: Roboto;
+}
+.font_size_12 {
+  font-size: 12pt;
+}
+.font_size_18 {
+  font-size: 18pt;
+}
+.font_size_16 {
+  font-size: 16pt;
+}
+.font_underline {
+  text-decoration: underline;
+}
+.font_center {
+  text-align: center;
+}
+.font_19 {
+  font-size: 19pt;
+}
+
+.sec_1 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 20px 0px 20px;
+}
+.sec_1::before,
+.sec_1::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #000;
+}
+
+.sec_1_logo {
+  left: 40px;
+  top: 40px;
+  position: absolute;
+}
+.sec_1_link {
+  right: 40px;
+  top: 40px;
+  position: absolute;
+}
+
+.sec_1_name {
+  text-align: center;
+  font-size: 24pt;
+  margin-bottom: 30px;
+}
+
+.round_profile {
+  border-radius: 50%;
+  border: 1px solid black;
+  width: 80px;
+}
+
+.round_circle {
+  background-color: white;
+  border: 1px solid black;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.round_profile img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.round_socmed {
+  margin-left: auto;
+  margin-right: 20px;
+  float: right;
+  border-radius: 50%;
+  width: 50px;
+
+  font-size: 50px;
+  color: #505050;
+}
+
+.sec_2 {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 0px 20px 30px 20px;
+  padding: 20px;
+}
+
+.sec_2_sub_1 {
+  margin-bottom: 10px;
+}
+
+.sec_2_sub_2_left {
+  width: 60%;
+}
+.sec_2_sub_2_right {
+  width: 40%;
+}
+
+.card_height {
+  height: 120px;
+  position: relative;
+}
+
+.card_to_bottom {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.sec_3_mx {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+}
+.sec_3_mx::before,
+.sec_3_mx::after {
+  content: "";
+  flex: 1;
+}
+
+.sec_3_separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.sec_3_separator::before,
+.sec_3_separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid #000;
+}
+
+.sec_3 {
+  margin: 0px 50px 0px 50px !important;
+}
+
+.bg_php {
+  background-color: #5c739f !important;
+}
+
+.bg_ci {
+  background-color: #dd4814 !important;
+}
+
+.bg_laravel {
+  background-color: #fa4e3a !important;
+}
+
+.bg_python {
+  background-color: #fece3e !important;
+}
+
+.bg_flutter {
+  background-color: #53c5f9 !important;
+}
+
+.bg_cpp {
+  background-color: #104482 !important;
+}
+
+.bg_net {
+  background-color: #7630a2 !important;
+}
+
+.sec_4 {
+  margin: 0px, 50px, 0px, 50px !important;
+}
+
+.MultiCarousel {
+  float: left;
+  overflow: hidden;
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+.MultiCarousel .MultiCarousel-inner {
+  transition: 1s ease all;
+  float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item {
+  float: left;
+}
+.MultiCarousel .MultiCarousel-inner .item > div.pad15 {
+  text-align: right;
+  margin: 10px;
+  background: #ffffff;
+  color: rgb(255, 255, 255);
+  border: 1px solid black;
+  font-family: SpaceMono;
+  height: 200px;
+  position: relative;
+}
+.MultiCarousel .MultiCarousel-inner .item > div.pad15 > div > div.content {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-right: -10px;
+  background-color: #000000b2;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.MultiCarousel .MultiCarousel-inner .item > div.pad15 > div > div.content > div.item_tag {
+  padding: 2px 10px 2px 10px;
+  /* margin: 5px; */
+  background-color: #000;
+  display: inline;
+}
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+  position: absolute;
+  top: calc(50% - 20px);
+}
+.MultiCarousel .leftLst {
+  left: 10px;
+}
+.MultiCarousel .rightLst {
+  right: 10px;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+  pointer-events: none;
+  background: black;
+}
+
+.footer_container {
+  border: 2px solid black;
+  border-radius: 0px;
+  margin: 30px 20px 0px 20px;
+  padding: 20px;
+}
+
+.round_socmed:hover {
+  color: black;
+}
