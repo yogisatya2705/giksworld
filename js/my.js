@@ -101,18 +101,30 @@ $(document).ready(function () {
     var bodyWidth = $("body").width();
 
     var element = document.getElementById("foot_sec_2");
+    var element_contact = document.getElementById("contact");
+    var element_contact_val = document.getElementById("contact_val");
     if (bodyWidth < 768) {
       element.classList.remove("text-right");
       element.classList.add("border-top");
       element.classList.add("border-dark");
       element.classList.add("mt-2");
       element.classList.add("pt-2");
+
+      element_contact.classList.remove("font_size_16");
+      element_contact.classList.add("font_size_14");
+      element_contact_val.classList.remove("font_size_14");
+      element_contact_val.classList.add("font_size_12");
     } else {
       element.classList.add("text-right");
       element.classList.remove("border-top");
       element.classList.remove("border-dark");
       element.classList.remove("mt-2");
       element.classList.remove("pt-2");
+
+      element_contact.classList.remove("font_size_14");
+      element_contact.classList.add("font_size_16");
+      element_contact_val.classList.remove("font_size_12");
+      element_contact_val.classList.add("font_size_14");
     }
   }
 
