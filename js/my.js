@@ -27,7 +27,9 @@ $(document).ready(function () {
     works.forEach((element) => {
       str +=
         // '<div class="item" onclick="pop_up(\''+element.id+'\', \''+element.title+'\', \''+element.date+'\', \''+element.tag+'\', \''+element.content+'\');">' +
-        "<div class=\"item\" onclick=\"document.getElementById('"+element.id+"').style.display='block'\">" +
+        '<div class="item" onclick="document.getElementById(\'' +
+        element.id +
+        "').style.display='block'\">" +
         '<div class="pad15">' +
         '<div style="' +
         "background: url('" +
@@ -51,44 +53,55 @@ $(document).ready(function () {
         "</div>" +
         "</div>";
 
-      str_modal += 
-        '<div id="'+element.id+'" class="w3-modal">' +
-        '    <div' +
+      str_modal +=
+        '<div id="' +
+        element.id +
+        '" class="w3-modal">' +
+        "    <div" +
         '    class="w3-modal-content"' +
         '    style="border: 2px solid black !important;"' +
-        '    >' +
+        "    >" +
         '    <div class="w3-container">' +
-        '        <span' +
-        '        onclick="document.getElementById(\''+element.id+'\').style.display=\'none\'"' +
+        "        <span" +
+        "        onclick=\"document.getElementById('" +
+        element.id +
+        "').style.display='none'\"" +
         '        class="w3-button w3-display-topright"' +
-        '        >&times;</span' +
-        '        >' +
+        "        >&times;</span" +
+        "        >" +
         '        <div style="padding: 20px 10px 20px 10px;">' +
         '        <div class="mb-3" style="height: 16pt; position: relative;">' +
-        '            <div' +
+        "            <div" +
         '            class="font_header font_underline font_size_16"' +
         '            style="float: left;"' +
-        '            >' +
-        '            ' + element.title +
-        '            </div>' +
-        '            <div' +
+        "            >" +
+        "            " +
+        element.title +
+        "            </div>" +
+        "            <div" +
         '            class="font_header font_size_16 d-none d-lg-block"' +
         '            style="position: absolute; right: 0px;"' +
-        '            >' +
-        '            '+element.date+' | '+element.tag+'' +
-        '            </div>' +
-        '        </div>' +
-        '        <div>' +
-        '            <iframe' +
-        '            src="'+element.content+'"' +
+        "            >" +
+        "            " +
+        element.date +
+        " | " +
+        element.tag +
+        "" +
+        "            </div>" +
+        "        </div>" +
+        "        <div>" +
+        "            <iframe" +
+        '            src="' +
+        element.content +
+        '"' +
         '            frameborder="0"' +
         '            style="width: 100%;"' +
-        '            ></iframe>' +
-        '        </div>' +
-        '        </div>' +
-        '    </div>' +
-        '    </div>' +
-        '</div>';
+        "            ></iframe>" +
+        "        </div>" +
+        "        </div>" +
+        "    </div>" +
+        "    </div>" +
+        "</div>";
     });
 
     document.getElementById("content_works").innerHTML = str;
@@ -242,3 +255,22 @@ $(document).ready(function () {
     ResCarousel(ell, Parent, slide);
   }
 });
+
+function myResponsiveTopNav() {
+  var x = document.getElementById("myTopnav");
+  var nav_menu = document.getElementById("navigation_menu");
+
+  if (x.classList.contains("sec_1_link")) {
+    x.classList.add("sec_1_link_responsive");
+    x.classList.remove("sec_1_link");
+
+    nav_menu.classList.add("fa-arrow-right");
+    nav_menu.classList.remove("fa-bars");
+  } else {
+    x.classList.add("sec_1_link");
+    x.classList.remove("sec_1_link_responsive");
+
+    nav_menu.classList.add("fa-bars");
+    nav_menu.classList.remove("fa-arrow-right");
+  }
+}

@@ -22,8 +22,21 @@
     <div class="sec_1_logo font_header font_size_12">
       <a href="" style="color: black;">giksworld</a>
     </div>
-    <div class="sec_1_link font_header font_size_12">
-      <a href="" style="color: black;">My Resume</a>
+    <div class="sec_1_link font_header font_size_12" id="myTopnav">
+      <div>
+        <a href="#about" style="color: black;" class="menu_hidden">About</a>
+      </div>
+      <div>
+        <a href="#skills" style="color: black;" class="menu_hidden">Skills</a>
+      </div>
+      <div>
+        <a href="#works" style="color: black;" class="menu_hidden">Work</a>
+      </div>
+
+      <a href="" style="color: black;" class="menu">My Resume</a>
+      <a href="javascript:void(0);" class="icon" onclick="myResponsiveTopNav()">
+        <i class="fa fa-bars" id="navigation_menu"></i>
+      </a>
     </div>
     <div class="sec_1">
       <div class="round_profile">
@@ -47,29 +60,49 @@
           <div class="row">
             <div class="col-12 col-lg-6 col-sm-6 mb-2">
               <div class="card card_height border border-dark rounded-0">
-                <div class="card-body card_to_bottom">
-                  Web Programming
+                <div class="card-body">
+                  <div class="card_icon">
+                    <img src="./img/web_programming.svg" alt="" style="width: auto; height: 60px;">
+                  </div>
+                  <div class="card_to_bottom">
+                    Web Programming
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-6 col-sm-6 mb-2">
               <div class="card card_height border border-dark rounded-0">
-                <div class="card-body card_to_bottom">
-                  Android Development
+                <div class="card-body">
+                  <div class="card_icon">
+                    <img src="./img/android.svg" alt="" style="width: auto; height: 60px;">
+                  </div>
+                  <div class="card_to_bottom">
+                    Android Development
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-6 col-sm-6 mb-2">
               <div class="card card_height border border-dark rounded-0">
-                <div class="card-body card_to_bottom">
-                  Algorithm
+                <div class="card-body">
+                  <div class="card_icon">
+                    <img src="./img/algorithm.svg" alt="" style="width: auto; height: 60px;">
+                  </div>
+                  <div class="card_to_bottom">
+                    Algorithm
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-6 col-sm-6 mb-2">
               <div class="card card_height border border-dark rounded-0">
-                <div class="card-body card_to_bottom">
-                  Desktop Programming
+                <div class="card-body">
+                  <div class="card_icon">
+                    <img src="./img/desktop_programming.svg" alt="" style="width: auto; height: 60px;">
+                  </div>
+                  <div class="card_to_bottom">
+                    Desktop Programming
+                  </div>
                 </div>
               </div>
             </div>
@@ -192,7 +225,7 @@
       </div>
     </div>
 
-    <div class="sec_3_mx" id="work">
+    <div class="sec_3_mx" id="works">
       <div class="sec_3_separator">
         <div class="round_circle"></div>
       </div>
@@ -300,7 +333,11 @@
           class="col-12 col-lg-6 col-md-6 font_header text-right"
         >
           <div id="contact" class="font_size_16">Contact Email</div>
-          <div id="contact_val" class="font_size_14" style="margin-bottom: 30px;">
+          <div
+            id="contact_val"
+            class="font_size_14"
+            style="margin-bottom: 30px;"
+          >
             <a href="mailto:yogisatyamahayana@gmail.com" style="color: black;"
               >yogisatyamahayana@gmail.com</a
             >
