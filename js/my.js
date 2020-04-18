@@ -4,7 +4,7 @@ let works = [
     title: "ETIKA",
     date: "2020-03-10",
     img: "./img/works/pemira.png",
-    content: "./works/pemira.html",
+    content: "./works/index.html",
     tag: "PHP,CI",
   },
   {
