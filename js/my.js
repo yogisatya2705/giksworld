@@ -69,7 +69,7 @@ $(document).ready(function () {
         '        class="w3-button w3-display-topright"' +
         "        >&times;</span" +
         "        >" +
-        '        <div style="padding: 20px 10px 20px 10px;">' +
+        '        <div style="padding: 20px 10px 20px 10px; height: 100%;">' +
         '        <div class="mb-3" style="height: 16pt; position: relative;">' +
         "            <div" +
         '            class="font_header font_underline font_size_16"' +
@@ -89,13 +89,12 @@ $(document).ready(function () {
         "" +
         "            </div>" +
         "        </div>" +
-        "        <div>" +
-        "            <iframe" +
+        '            <div style="height: 100%;padding-bottom: inherit;"><iframe' +
         '            src="' +
         element.content +
         '"' +
         '            frameborder="0"' +
-        '            style="width: 100%;"' +
+        '            style="width: 100%;height: 100%"' +
         "            ></iframe>" +
         "        </div>" +
         "        </div>" +
@@ -116,6 +115,8 @@ $(document).ready(function () {
     var element = document.getElementById("foot_sec_2");
     var element_contact = document.getElementById("contact");
     var element_contact_val = document.getElementById("contact_val");
+    var element_sec_2 = document.getElementById("sec_2_content");
+    var element_socmed = document.getElementById("socmed_sec");
     if (bodyWidth < 768) {
       element.classList.remove("text-right");
       element.classList.add("border-top");
@@ -127,6 +128,11 @@ $(document).ready(function () {
       element_contact.classList.add("font_size_14");
       element_contact_val.classList.remove("font_size_14");
       element_contact_val.classList.add("font_size_12");
+
+      element_sec_2.classList.remove("font_size_18");
+      element_sec_2.classList.add("font_size_14");
+
+      element_socmed.classList.add("font_size_14");
     } else {
       element.classList.add("text-right");
       element.classList.remove("border-top");
@@ -138,6 +144,9 @@ $(document).ready(function () {
       element_contact.classList.add("font_size_16");
       element_contact_val.classList.remove("font_size_12");
       element_contact_val.classList.add("font_size_14");
+
+      element_sec_2.classList.remove("font_size_14");
+      element_sec_2.classList.add("font_size_18");
     }
   }
 

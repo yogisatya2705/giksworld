@@ -34,7 +34,12 @@
       </div>
 
       <a href="" style="color: black;" class="menu">My Resume</a>
-      <a href="javascript:void(0);" class="icon" onclick="myResponsiveTopNav()">
+      <a
+        style="color: black;"
+        href="javascript:void(0);"
+        class="icon"
+        onclick="myResponsiveTopNav()"
+      >
         <i class="fa fa-bars" id="navigation_menu"></i>
       </a>
     </div>
@@ -51,7 +56,10 @@
       </div>
 
       <div class="row">
-        <div class="col-12 col-lg-6 mb-3 font_content font_size_18">
+        <div
+          class="col-12 col-lg-6 mb-3 font_content font_size_18"
+          id="sec_2_content"
+        >
           Saya adalah pengembang perangkat lunak mulai dari web sampai mobile
           yang sekarang masih berstatus mahasiswa di Universitas Pendidikan
           Ganesha berdomisili di Bali.
@@ -62,7 +70,11 @@
               <div class="card card_height border border-dark rounded-0">
                 <div class="card-body">
                   <div class="card_icon">
-                    <img src="./img/web_programming.svg" alt="" style="width: auto; height: 60px;">
+                    <img
+                      src="./img/web_programming.svg"
+                      alt=""
+                      style="width: auto; height: 60px;"
+                    />
                   </div>
                   <div class="card_to_bottom">
                     Web Programming
@@ -74,7 +86,11 @@
               <div class="card card_height border border-dark rounded-0">
                 <div class="card-body">
                   <div class="card_icon">
-                    <img src="./img/android.svg" alt="" style="width: auto; height: 60px;">
+                    <img
+                      src="./img/android.svg"
+                      alt=""
+                      style="width: auto; height: 60px;"
+                    />
                   </div>
                   <div class="card_to_bottom">
                     Android Development
@@ -86,7 +102,11 @@
               <div class="card card_height border border-dark rounded-0">
                 <div class="card-body">
                   <div class="card_icon">
-                    <img src="./img/algorithm.svg" alt="" style="width: auto; height: 60px;">
+                    <img
+                      src="./img/algorithm.svg"
+                      alt=""
+                      style="width: auto; height: 60px;"
+                    />
                   </div>
                   <div class="card_to_bottom">
                     Algorithm
@@ -98,7 +118,11 @@
               <div class="card card_height border border-dark rounded-0">
                 <div class="card-body">
                   <div class="card_icon">
-                    <img src="./img/desktop_programming.svg" alt="" style="width: auto; height: 60px;">
+                    <img
+                      src="./img/desktop_programming.svg"
+                      alt=""
+                      style="width: auto; height: 60px;"
+                    />
                   </div>
                   <div class="card_to_bottom">
                     Desktop Programming
@@ -250,15 +274,18 @@
             <div id="id01" class="w3-modal">
               <div
                 class="w3-modal-content"
-                style="border: 2px solid black !important;"
+                style="
+                  border: 2px solid black !important;
+                  height: 100% !important;
+                "
               >
-                <div class="w3-container">
+                <div class="w3-container" style="height: 100% !important;">
                   <span
                     onclick="document.getElementById('id01').style.display='none'"
                     class="w3-button w3-display-topright"
                     >&times;</span
                   >
-                  <div style="padding: 20px 10px 20px 10px;">
+                  <div style="padding: 20px 10px 20px 10px; height: 100%;">
                     <div class="mb-3" style="height: 16pt; position: relative;">
                       <div
                         class="font_header font_underline font_size_16"
@@ -273,11 +300,11 @@
                         2020-03-11 | PHP,CI
                       </div>
                     </div>
-                    <div>
+                    <div style="height: 100%;">
                       <iframe
                         src="./works/pemira.html"
                         frameborder="0"
-                        style="width: 100%;"
+                        style="width: 100%; height: 100%;"
                       ></iframe>
                     </div>
                   </div>
@@ -343,26 +370,28 @@
             >
           </div>
 
-          <a href="http://fb.com/yogisatya.12.2705" target="_blank">
-            <div class="round_socmed">
-              <i class="fab fa-facebook-square"></i>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/yogisatya12/" target="_blank">
-            <div class="round_socmed">
-              <i class="fab fa-instagram"></i>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/yogisatya" target="_blank">
-            <div class="round_socmed">
-              <i class="fab fa-linkedin-in"></i>
-            </div>
-          </a>
-          <a href="https://github.com/yogisatya2705" target="_blank">
-            <div class="round_socmed">
-              <i class="fab fa-github"></i>
-            </div>
-          </a>
+          <div id="socmed_sec" class="mx-auto">
+            <a href="http://fb.com/yogisatya.12.2705" target="_blank">
+              <div class="round_socmed">
+                <i class="fab fa-facebook-square"></i>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/yogisatya12/" target="_blank">
+              <div class="round_socmed">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/yogisatya" target="_blank">
+              <div class="round_socmed">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a href="https://github.com/yogisatya2705" target="_blank">
+              <div class="round_socmed">
+                <i class="fab fa-github"></i>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
